@@ -4989,9 +4989,10 @@
     display: inline-flex !important;
   }
 
-  .d-print-none {
+ .d-print-none {
     display: none !important;
   }
+
 }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */

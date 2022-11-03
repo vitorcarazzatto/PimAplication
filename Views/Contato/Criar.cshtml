@@ -2,19 +2,103 @@
     ViewData["Title"] = "Criar";
 }
 
-    <h1 class="display-4 text-center">Cadastro de contatos</h1>        
-<form class="align-items-center justify-content-center">
-    <div class="row form-group">
-        <div class="col col-lg-6">
-            <label>Nome Completo</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Seu nome completo">
+<div class="container-md container-form align-items-center">
+    <h1 class="display-4 text-center">Cadastro de contatos</h1>
+    <form>
+        <div class="row align-items-center">
+            <h5>Pessoa</h5>
+            <div class="col-md-8">
+                <label>Nome Completo</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Seu nome completo">
+            </div>
+            <div class="col-md-4">
+                <label>CPF</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="999.999.999-99">
+            </div>
+            <hr />
         </div>
-        <div class="col col-lg-3">
-            <label>CPF</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="999.999.999-99">
+        <div class="row">
+            <h5>Contato</h5>
+            <div class="col-md-6">
+                <label>Tipo do telefone</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecione...</option>
+                    <option value="1">Telefone</option>
+                    <option value="2">Celular</option>
+                    <option value="3">Comercial</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label>Numero de Telefone</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" placeholder="+99 (99) 9999-9999">
+            </div>
+            <hr />
         </div>
-    </div>
+        <div class="row">
+            <h5>Endereço</h5>
+            <div class="col-md-7">
+                <label>Logradouro</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rua perola">
+            </div>
+            <div class="col-md-2">
+                <label>Número</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="9999">
+            </div>
+            <div class="col-md-3">
+                <label>CEP</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="99999-999">
+            </div>      
+        </div>
 
 
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label>Bairro</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Jardim Santa Esmeralda">
+            </div>
+            <div class="col-md-3">
+                <label>Cidade</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Jardim Santa Esmeralda, Rua perola">
+            </div>
+            <div class="col-md-3">
+                <label>Estado</label>
+                <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione...</option>
+                <option value="1">RO</option>
+                <option value="2">AC</option>
+                <option value="3">AM</option>
+                <option value="4">RR</option>
+                <option value="5">PA</option>
+                <option value="6">AP</option>
+                <option value="7">TO</option>
+                <option value="8">MA</option>
+                <option value="9">PI</option>
+                <option value="10">CE</option>
+                <option value="11">RN</option>
+                <option value="12">PB</option>
+                <option value="13">PE</option>
+                <option value="13">AL</option>
+                <option value="14">SE</option>
+                <option value="15">BA</option>
+                <option value="16">MG</option>
+                <option value="17">ES</option>
+                <option value="18">RJ</option>
+                <option value="19">SP</option>
+                <option value="20">PR</option>
+                <option value="21">SC</option>
+                <option value="22">RS</option>
+                <option value="23">MS</option>
+                <option value="24">MT</option>
+                <option value="25">GO</option>
+                <option value="26">DF</option>
+                </select>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+
+            <button type="submit" class="btn btn-primary form-button" id="btn-criar">Criar</button>
+            <a class="btn btn-primary btn-return" asp-area="" asp-controller="Contato" asp-action="Index">Voltar</a>
+        </div>
+    </form>
+</div>
+
