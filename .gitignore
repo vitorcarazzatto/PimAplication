@@ -363,7 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # EF Core Migrations
-Migrations
+Migrations/
 
 # DB Configurations
 appsettings.json
