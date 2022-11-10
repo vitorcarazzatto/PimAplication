@@ -1,10 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using PimAplication.Data;
+using PimAplication.Repository.Interface;
+using PimAplication.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add Repository
+builder.Services.AddScoped<IBaseRepository, BaseRepository>();
+builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
 builder.Services.AddDbContext<PimContext>(options =>
 {
